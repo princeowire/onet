@@ -7,9 +7,9 @@ export const Home = () => {
       <section className=" md:top-cap-border lg:top-cap-border flex flex-col gap-8 lg:mx-16 md:mx-8 sm:mx-4 p-3 m-4">
 
         <div className="flex justify-center p-2 whitespace-nowrap rounded-full shadow-lg fit-content mx-auto">
-          <p className="p-1">Over +600</p>
+          {/* <p className="p-1">Over +600</p>
           <img src={ppl} alt="" />
-          <p className="p-1"> persons registered</p>
+          <p className="p-1"> persons registered</p> */}
         </div>
 
         <div className=" relative flex items-center justify-center flex-col gap-5">
@@ -181,7 +181,7 @@ export const Home = () => {
 
       </section>
 
-      <section className="flex flex-col items-center justify-center gap-8 lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-8">
+      {/* <section className="flex flex-col items-center justify-center gap-8 lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-8">
 
         <h3 className="text-center text-2xl font-bold max-w-lg">Don't take our word for it. Hear from our learners.</h3>
 
@@ -234,7 +234,7 @@ export const Home = () => {
 
         </div>
 
-      </section>
+      </section> */}
 
       <section className="bg-rocket-bg rounded-3xl flex flex-col md:flex-row lg:flex-row gap-8 items-center justify-between lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-8" id="get-started">
 
