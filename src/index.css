@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@layer base {
+ a {
+    padding: 10px;
+ } 
+}
+
+@layer components {
+    .fit-content {
+        width: fit-content;
+    }
+
+    .link {
+        position: absolute;
+        left: 50%;
+        align-items: center;
+        transform: translate(-50%, 50%);
+        font-size: smaller;
+        margin-top: 75px;
+        white-space: nowrap;
+        gap: 7px;
+    }
+
+    .link a {
+        padding: 5px;
+    }
+    
+    .unlink {
+        margin-top: 0;
+        top: 0;
+        gap: 1rem;
+    }
+
+    .top-cap-border {
+        border-top: 1px solid #E5E5E5;
+        border-left: 1px solid #E5E5E5;
+        border-right: 1px solid #E5E5E5;
+        border-top-right-radius: 36px;
+        border-top-left-radius: 36px;
+        background-color: #FDFCFF;
+    }
+
+    .marquee {
+        padding: 10px 0 10px 0;
+        overflow: hidden;
+    }
+    
+    .marq {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        will-change: transform;
+        animation: marquee 21s linear infinite;
+    }
+    
+    .marq-minus {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        will-change: transform;
+        animation: marqueeInverse 21s linear infinite;
+    }
+    
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+    
+    @keyframes marqueeInverse {
+        from { transform: translateX(-50%); }
+        to { transform: translateX(0); }
+    }
+
+    details {
+        padding: 15px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        flex-direction: row-reverse;
+        position: relative;
+        margin: 10px 0 10px;
+        color: black;
+        border-bottom: 1px solid black;
+    }
+
+    details:nth-child(7) {
+        border: none;
+    }
+    
+     details > summary {
+        list-style: 'url(./assets/faq vector.svg)';
+        list-style-type: none;
+    }
+    
+    details > summary::after {
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        content: '⇩';
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+    
+    details[open] > summary::after {
+        content: '⇑';
+    }
+    
+    details [open] > summary {
+        list-style: '⇑';
+    }
+    
+    details[open] > summary {
+        padding-bottom: 12px;
+    }
+
+    summary {
+        padding-right: 50px;
+    }
+}
