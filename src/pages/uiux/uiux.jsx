@@ -4,13 +4,13 @@ import { certificateIcon, cost, date, duration, frontEnd, level, requirement, ti
 export const Uiux = () => {
   return (
     <div>
-        <section className='lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-4 flex flex-col md:flex-row lg:flex-row justify-between gap-8'>
+        <section className='lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-12 flex flex-col md:flex-row lg:flex-row justify-between gap-8'>
 
             <div className='flex flex-col gap-2 max-w-md w-full md:w-2/5 lg:w-2/5'>
                 <button className='bg-dark-gray fit-content px-4 rounded-sm border-solid border-border'> Online</button>
                 <h2 className='text-3xl font-extrabold py-3'>UI/UX Design</h2>
                 <p className='text-text-gray'>UI/UX skills are in high demand, and mastering them can open up exciting career opportunities. Our course equips students with the knowledge and practical skills needed to thrive in this dynamic field.</p>
-                <button className="flex justify-center fit-content px-6 py-3 bg-btn-color text-white rounded-xl">Apply now</button>
+                <a href='/register' className="flex justify-center fit-content px-6 py-3 bg-btn-color text-white rounded-xl">Apply now</a>
                 <p>Application are currently open!</p>
             </div>
 

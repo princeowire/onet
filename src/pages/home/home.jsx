@@ -1,16 +1,16 @@
 import React from "react";
-import { calender, clock, codeBackend, dart, emma, frontEnd, groupIcon, headText, Kriston, lady, lock, mike, notSmilley, pc, ppl, redCarosel, rocket } from '../../assets/img';
+import { bussinesWoman, calender, clock, codeBackend, dart, emma, frontEnd, groupIcon, headText, Kriston, lady, lock, mike, notSmilley, pc, ppl, redCarosel, rocket } from '../../assets/img';
 
 export const Home = () => {
   return (
     <div>
       <section className=" md:top-cap-border lg:top-cap-border flex flex-col gap-8 lg:mx-16 md:mx-8 sm:mx-4 p-3 m-4">
 
-        <div className="flex justify-center p-2 whitespace-nowrap rounded-full shadow-lg fit-content mx-auto">
-          {/* <p className="p-1">Over +600</p>
+        {/* <div className="flex justify-center p-2 whitespace-nowrap rounded-full shadow-lg fit-content mx-auto">
+          <p className="p-1">Over +600</p>
           <img src={ppl} alt="" />
-          <p className="p-1"> persons registered</p> */}
-        </div>
+          <p className="p-1"> persons registered</p>
+        </div> */}
 
         <div className=" relative flex items-center justify-center flex-col gap-5">
           <img src={lock} className="hidden lg:block absolute bottom-0 left-0 p-4" alt="" />
@@ -27,7 +27,8 @@ export const Home = () => {
         </button>
 
         <div className="w-full">
-          <img className="w-full" src={lady} alt="" />
+          <img className="w-full hidden md:flex lg:flex" src={lady} alt="" />
+          <img className="w-full flex md:hidden lg:hidden" src={bussinesWoman} alt="" />
         </div>
 
       </section>
@@ -47,7 +48,7 @@ export const Home = () => {
 
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-stretch gap-4 lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-8">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-stretch gap-8 lg:px-16 md:px-8 sm:px-4 px-2 p-2 py-8">
 
           <div className="w-fit card max-w-sm flex flex-col justify-between ">
 
@@ -128,8 +129,11 @@ export const Home = () => {
           </div>
 
           <div className="w-full lg:w-3/5 bg-dark-gray px-4 py-8 rounded-3xl">
-            <div className="flex items-center justify-center gap-4 flex-col marquee">
-             <div className="flex marq items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-4 flex-col marquee relative">
+
+              <div className="h-28 w-8 absolute top-0 right-0 z-10 bg-white blur-md"></div>
+            
+              <div className="flex marq items-center justify-center gap-3">
               <img src={redCarosel} alt="" />
               <img src={notSmilley} alt="" />
               <img src={redCarosel} alt="" />
@@ -146,28 +150,36 @@ export const Home = () => {
               <img src={notSmilley} alt="" />
               <img src={redCarosel} alt="" />
               <img src={notSmilley} alt="" />
-            </div>
+              </div>
+
+              <div className="h-28 w-8 absolute bottom-0 left-0 bg-white blur-md"></div>
+
             </div>
 
-            <div className="flex items-center justify-center gap-4 flex-col marquee">
-            <div className="flex marq-minus items-center justify-center gap-3">
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-              <img src={redCarosel} alt="" />
-              <img src={notSmilley} alt="" />
-            </div>
+              <div className="flex items-center justify-center gap-4 flex-col marquee relative">
+
+              <div className="h-28 w-8 absolute top-0 right-0 z-10 bg-white blur-md"></div>
+                
+              <div className="flex marq-minus items-center justify-center gap-3">
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+                <img src={redCarosel} alt="" />
+                <img src={notSmilley} alt="" />
+              </div>
+
+              <div className="h-28 w-8 absolute bottom-0 left-0 bg-white blur-md"></div>
 
             </div>
 
@@ -261,34 +273,30 @@ export const Home = () => {
           </details>
 
           <details className="text-faq-text">
-            Yes, ONET Solutions occasionally offers internships to students to provide valuable real-world experience.
+            NO, there are no prerequisites for joining ONET Solutions. Our courses are designed to accormodate all skill levels.
             <summary className="text-lg font-semibold text-black">Are there any prerequisites to joining ONET Solutions?</summary>
           </details>
 
           <details className="text-faq-text">
-            Yes, ONET Solutions occasionally offers internships to students to provide valuable real-world experience.
+            Yes, Certification are provided upon successful completion of coureses, enhancing your credentials in the tech industry.
             <summary className="text-lg font-semibold text-black">Are certificates provided upon course completion?</summary>
           </details>
 
           <details className="text-faq-text">
-            Yes, ONET Solutions occasionally offers internships to students to provide valuable real-world experience.
+            Yes, you'll have lifetime access to course material to review and rienforce your learning at your own pace.
             <summary className="text-lg font-semibold text-black">Can I access course materials after completion?</summary>
           </details>
 
           <details className="text-faq-text">
-            Yes, ONET Solutions occasionally offers internships to students to provide valuable real-world experience.
+            Yes, we offer live instructor-led session to provide personalized guidance and surport throughout your learning journey.
             <summary className="text-lg font-semibold text-black">Are there live instructor-led sessions?</summary>
           </details>
 
           <details className="text-faq-text">
-            Yes, ONET Solutions occasionally offers internships to students to provide valuable real-world experience.
+            Yes, ONET Solutions provides a vibrant online community where student can engage, collaborate, and network with peers and mentors.
             <summary className="text-lg font-semibold text-black">Are lessons done online?</summary>
           </details>
 
-          <details className="text-faq-text">
-            Yes, ONET Solutions occasionally offers internships to students to provide valuable real-world experience.
-            <summary className="text-lg font-semibold text-black">Is there a community for students to interact and collaborate?</summary>
-          </details>
         </div>
         
       </section>

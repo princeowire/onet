@@ -18,6 +18,7 @@ export default {
         "faq-text": "#49454F",
         "rocket-bg": "#FCF7FF",
         "border": "#CCC2DC",
+        "purple-text": "#4A0063"
       },
 
       screens: {

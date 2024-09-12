@@ -10,7 +10,7 @@ export const Frontend = () => {
                 <button className='bg-dark-gray fit-content px-4 rounded-sm border-solid border-border'> Online</button>
                 <h2 className='text-3xl font-extrabold py-3'>Frontend Development</h2>
                 <p className='text-text-gray'>By enrolling in our Front-End Development course, students will gain practical knowledge, learn industry best practices, and be well-prepared for a rewarding career in web development.</p>
-                <button className="flex justify-center fit-content px-6 py-3 bg-btn-color text-white rounded-xl">Apply now</button>
+                <a href='/register' className="flex justify-center fit-content px-6 py-3 bg-btn-color text-white rounded-xl">Apply now</a>
                 <p>Application are currently open!</p>
             </div>
 

@@ -9,11 +9,11 @@ export const Footer = () => {
 
             <div>
              <p className='pb-2'>Follow us on</p>
-             <div className='flex '>
-                <img src={twiter} alt="" />
-                <img src={instagram} alt="" />
-                <img src={facebook} alt="" />
-                <img src={linkedin} alt="" />
+             <div className='flex'>
+                <a href=""><img src={twiter} alt="" /></a>
+                <a href=""><img src={instagram} alt="" /></a>
+                <a href=""><img src={facebook} alt="" /></a>
+                <a href=""><img src={linkedin} alt="" /></a>
              </div>
             </div>
 

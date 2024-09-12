@@ -7,6 +7,7 @@ import { Footer } from './component/footer/footer';
 import { Frontend } from './pages/forntend/frontend';
 import { Uiux } from './pages/uiux/uiux';
 import { Backend } from './pages/backend/backend';
+import { Register } from './pages/register/register';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/frontend" element={<Frontend />}/>
       <Route path="/uiux" element={<Uiux />}/>
       <Route path="/backend" element={<Backend />}/>
+      <Route path="/register" element={<Register />}/>
     </Routes>
     <Footer />
     </BrowserRouter>

@@ -29,6 +29,7 @@ import frontEnd from './frontend.svg';
 import cost from './credit-card.svg';
 import level from './level.svg';
 import requirement from './require.svg';
+import bussinesWoman from './Businesswoman.jpg';
 
 export  {
     Logo,
@@ -62,4 +63,5 @@ export  {
     mike,
     rocket,
     frontEnd,
+    bussinesWoman,
 }
